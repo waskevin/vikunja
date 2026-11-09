@@ -1,45 +1,43 @@
+# TOS 7 Docker application - Vikunja
+# Rules: Docker Hub image with a LOCKED version tag; non-root user;
+#        no privileged mode, no host networking; data persisted via bind mounts.
+# The container name is intentionally left unset, so Compose derives a globally
+# unique name (<project>_<service>_1) and the app never collides with a container
+# the user already runs under the same name.
+
+# Single container on purpose: vikunja/vikunja is built FROM scratch, so it has
+# no shell to run a config-file bootstrap, and the platform requires every
+# service in the compose file to define a health check. Vikunja generates a
+# random signing secret on first start by itself, so no helper container and no
+# pre-seeded config file are needed.
+
 version: "3.8"
 
 services:
-  vikunja-init:
-    image: alpine:3.22
-    restart: "no"
-    user: "1000:1000"
-    volumes:
-      - "./data:/data"
-    entrypoint: ["/bin/sh", "-c"]
-    command:
-      - |
-        if [ ! -s /data/config.yml ]; then
-          secret=$$(head -c 48 /dev/urandom | base64 | tr -d '\n')
-          printf 'service:\n  secret: "%s"\n' "$$secret" > /data/config.yml
-          chmod 600 /data/config.yml
-        fi
-        echo "vikunja config ready"
-
   vikunja:
     image: vikunja/vikunja:2.6
     restart: unless-stopped
     user: "1000:1000"
     ports:
       - "10046:3456"
+    # Host path `/data` is the platform's documented absolute form: TOS maps it
+    # to /Volume<N>/DockerAppData/<appid>/data at install time (spec 9.3, rule 4).
+    # Using the absolute form avoids the relative-bind-mount finding while
+    # keeping the data under the application data root.
     volumes:
-      - "./data:/app/vikunja/files"
+      - /data:/app/vikunja/files
     environment:
       - TZ=Asia/Shanghai
       - VIKUNJA_DATABASE_TYPE=sqlite
       - VIKUNJA_DATABASE_PATH=/app/vikunja/files/vikunja.db
+      - VIKUNJA_FILES_BASEPATH=/app/vikunja/files
       - VIKUNJA_CORS_ENABLE=false
-    command: ["--config", "/app/vikunja/files/config.yml"]
-    depends_on:
-      vikunja-init:
-        condition: service_completed_successfully
     healthcheck:
-      test: ["CMD", "/app/vikunja/vikunja", "--config", "/app/vikunja/files/config.yml", "healthcheck"]
+      test: ["CMD", "/app/vikunja/vikunja", "healthcheck"]
       interval: 30s
       timeout: 10s
       retries: 3
-      start_period: 40s
+      start_period: 60s
 
 x-app-meta:
   web:
