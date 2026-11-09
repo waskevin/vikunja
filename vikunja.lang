@@ -4,96 +4,96 @@
 name = "Vikunja"
 auth = "waskevin"
 descript = "Vikunja is a self-hosted to-do and project management app for your TNAS. Organise tasks in lists and projects, group them with labels, set due dates and reminders, share lists with other users and subscribe to them from a calendar app, all backed by one SQLite database."
-release_note = "1. Initial release."
-important = "Open the web UI and register the first account - the first registered user becomes the administrator. A random JWT signing secret is generated on first start into data/config.yml by the short-lived vikunja-init container, so logins survive restarts. Docker Engine must be installed and enabled from the TOS App Center."
+release_note = "1.0.1: initial release."
+important = "Open the web UI and register the first account - the first registered user becomes the administrator. Vikunja generates a random signing secret on startup itself, so after a restart you may have to log in again (no data is affected). Docker Engine must be installed and enabled from the TOS App Center. License: AGPL-3.0. Source code, notices and privacy policy: https://github.com/waskevin/vikunja"
 
 [zh-cn]
 name = "Vikunja"
 auth = "waskevin"
 descript = "Vikunja 是运行在 TNAS 上的自建待办与项目管理应用。可用清单和项目组织任务，添加标签、截止日期与提醒，与其他用户共享清单，并在日历应用中订阅，全部数据保存在单个 SQLite 数据库中。"
-release_note = "1. Initial release."
-important = "首次使用时请打开网页界面注册第一个账号，首位注册的用户即为管理员。首次启动时由临时的 vikunja-init 容器在数据目录中生成随机 JWT 签名密钥并保存为 config.yml，登录状态重启后依然有效。需先在应用中心安装并启用 DockerEngine。"
+release_note = "1.0.1: initial release."
+important = "首次使用时请打开网页界面注册第一个账号，首位注册的用户即为管理员。Vikunja 会在启动时自行生成随机的签名密钥，因此重启后可能需要重新登录（数据不受影响）。需先在应用中心安装并启用 DockerEngine。 许可证：AGPL-3.0。源码、版权声明与隐私政策：https://github.com/waskevin/vikunja"
 
 [zh-hk]
 name = "Vikunja"
 auth = "waskevin"
 descript = "Vikunja 是运行在 TNAS 上的自建待办与项目管理应用。可用清单和项目组织任务，添加标签、截止日期与提醒，与其他用户共享清单，并在日历应用中订阅，全部数据保存在单个 SQLite 数据库中。"
-release_note = "1. Initial release."
-important = "首次使用时请打开网页界面注册第一个账号，首位注册的用户即为管理员。首次启动时由临时的 vikunja-init 容器在数据目录中生成随机 JWT 签名密钥并保存为 config.yml，登录状态重启后依然有效。需先在应用中心安装并启用 DockerEngine。"
+release_note = "1.0.1: initial release."
+important = "首次使用时请打开网页界面注册第一个账号，首位注册的用户即为管理员。Vikunja 会在启动时自行生成随机的签名密钥，因此重启后可能需要重新登录（数据不受影响）。需先在应用中心安装并启用 DockerEngine。 许可证：AGPL-3.0。源码、版权声明与隐私政策：https://github.com/waskevin/vikunja"
 
 [fr-fr]
 name = "Vikunja"
 auth = "waskevin"
 descript = "Vikunja is a self-hosted to-do and project management app for your TNAS. Organise tasks in lists and projects, group them with labels, set due dates and reminders, share lists with other users and subscribe to them from a calendar app, all backed by one SQLite database."
-release_note = "1. Initial release."
-important = "Open the web UI and register the first account - the first registered user becomes the administrator. A random JWT signing secret is generated on first start into data/config.yml by the short-lived vikunja-init container, so logins survive restarts. Docker Engine must be installed and enabled from the TOS App Center."
+release_note = "1.0.1: initial release."
+important = "Open the web UI and register the first account - the first registered user becomes the administrator. Vikunja generates a random signing secret on startup itself, so after a restart you may have to log in again (no data is affected). Docker Engine must be installed and enabled from the TOS App Center. License: AGPL-3.0. Source code, notices and privacy policy: https://github.com/waskevin/vikunja"
 
 [de-de]
 name = "Vikunja"
 auth = "waskevin"
 descript = "Vikunja is a self-hosted to-do and project management app for your TNAS. Organise tasks in lists and projects, group them with labels, set due dates and reminders, share lists with other users and subscribe to them from a calendar app, all backed by one SQLite database."
-release_note = "1. Initial release."
-important = "Open the web UI and register the first account - the first registered user becomes the administrator. A random JWT signing secret is generated on first start into data/config.yml by the short-lived vikunja-init container, so logins survive restarts. Docker Engine must be installed and enabled from the TOS App Center."
+release_note = "1.0.1: initial release."
+important = "Open the web UI and register the first account - the first registered user becomes the administrator. Vikunja generates a random signing secret on startup itself, so after a restart you may have to log in again (no data is affected). Docker Engine must be installed and enabled from the TOS App Center. License: AGPL-3.0. Source code, notices and privacy policy: https://github.com/waskevin/vikunja"
 
 [it-it]
 name = "Vikunja"
 auth = "waskevin"
 descript = "Vikunja is a self-hosted to-do and project management app for your TNAS. Organise tasks in lists and projects, group them with labels, set due dates and reminders, share lists with other users and subscribe to them from a calendar app, all backed by one SQLite database."
-release_note = "1. Initial release."
-important = "Open the web UI and register the first account - the first registered user becomes the administrator. A random JWT signing secret is generated on first start into data/config.yml by the short-lived vikunja-init container, so logins survive restarts. Docker Engine must be installed and enabled from the TOS App Center."
+release_note = "1.0.1: initial release."
+important = "Open the web UI and register the first account - the first registered user becomes the administrator. Vikunja generates a random signing secret on startup itself, so after a restart you may have to log in again (no data is affected). Docker Engine must be installed and enabled from the TOS App Center. License: AGPL-3.0. Source code, notices and privacy policy: https://github.com/waskevin/vikunja"
 
 [es-es]
 name = "Vikunja"
 auth = "waskevin"
 descript = "Vikunja is a self-hosted to-do and project management app for your TNAS. Organise tasks in lists and projects, group them with labels, set due dates and reminders, share lists with other users and subscribe to them from a calendar app, all backed by one SQLite database."
-release_note = "1. Initial release."
-important = "Open the web UI and register the first account - the first registered user becomes the administrator. A random JWT signing secret is generated on first start into data/config.yml by the short-lived vikunja-init container, so logins survive restarts. Docker Engine must be installed and enabled from the TOS App Center."
+release_note = "1.0.1: initial release."
+important = "Open the web UI and register the first account - the first registered user becomes the administrator. Vikunja generates a random signing secret on startup itself, so after a restart you may have to log in again (no data is affected). Docker Engine must be installed and enabled from the TOS App Center. License: AGPL-3.0. Source code, notices and privacy policy: https://github.com/waskevin/vikunja"
 
 [hu-hu]
 name = "Vikunja"
 auth = "waskevin"
 descript = "Vikunja is a self-hosted to-do and project management app for your TNAS. Organise tasks in lists and projects, group them with labels, set due dates and reminders, share lists with other users and subscribe to them from a calendar app, all backed by one SQLite database."
-release_note = "1. Initial release."
-important = "Open the web UI and register the first account - the first registered user becomes the administrator. A random JWT signing secret is generated on first start into data/config.yml by the short-lived vikunja-init container, so logins survive restarts. Docker Engine must be installed and enabled from the TOS App Center."
+release_note = "1.0.1: initial release."
+important = "Open the web UI and register the first account - the first registered user becomes the administrator. Vikunja generates a random signing secret on startup itself, so after a restart you may have to log in again (no data is affected). Docker Engine must be installed and enabled from the TOS App Center. License: AGPL-3.0. Source code, notices and privacy policy: https://github.com/waskevin/vikunja"
 
 [ja-jp]
 name = "Vikunja"
 auth = "waskevin"
 descript = "Vikunja is a self-hosted to-do and project management app for your TNAS. Organise tasks in lists and projects, group them with labels, set due dates and reminders, share lists with other users and subscribe to them from a calendar app, all backed by one SQLite database."
-release_note = "1. Initial release."
-important = "Open the web UI and register the first account - the first registered user becomes the administrator. A random JWT signing secret is generated on first start into data/config.yml by the short-lived vikunja-init container, so logins survive restarts. Docker Engine must be installed and enabled from the TOS App Center."
+release_note = "1.0.1: initial release."
+important = "Open the web UI and register the first account - the first registered user becomes the administrator. Vikunja generates a random signing secret on startup itself, so after a restart you may have to log in again (no data is affected). Docker Engine must be installed and enabled from the TOS App Center. License: AGPL-3.0. Source code, notices and privacy policy: https://github.com/waskevin/vikunja"
 
 [ko-kr]
 name = "Vikunja"
 auth = "waskevin"
 descript = "Vikunja is a self-hosted to-do and project management app for your TNAS. Organise tasks in lists and projects, group them with labels, set due dates and reminders, share lists with other users and subscribe to them from a calendar app, all backed by one SQLite database."
-release_note = "1. Initial release."
-important = "Open the web UI and register the first account - the first registered user becomes the administrator. A random JWT signing secret is generated on first start into data/config.yml by the short-lived vikunja-init container, so logins survive restarts. Docker Engine must be installed and enabled from the TOS App Center."
+release_note = "1.0.1: initial release."
+important = "Open the web UI and register the first account - the first registered user becomes the administrator. Vikunja generates a random signing secret on startup itself, so after a restart you may have to log in again (no data is affected). Docker Engine must be installed and enabled from the TOS App Center. License: AGPL-3.0. Source code, notices and privacy policy: https://github.com/waskevin/vikunja"
 
 [pl-pl]
 name = "Vikunja"
 auth = "waskevin"
 descript = "Vikunja is a self-hosted to-do and project management app for your TNAS. Organise tasks in lists and projects, group them with labels, set due dates and reminders, share lists with other users and subscribe to them from a calendar app, all backed by one SQLite database."
-release_note = "1. Initial release."
-important = "Open the web UI and register the first account - the first registered user becomes the administrator. A random JWT signing secret is generated on first start into data/config.yml by the short-lived vikunja-init container, so logins survive restarts. Docker Engine must be installed and enabled from the TOS App Center."
+release_note = "1.0.1: initial release."
+important = "Open the web UI and register the first account - the first registered user becomes the administrator. Vikunja generates a random signing secret on startup itself, so after a restart you may have to log in again (no data is affected). Docker Engine must be installed and enabled from the TOS App Center. License: AGPL-3.0. Source code, notices and privacy policy: https://github.com/waskevin/vikunja"
 
 [ru-ru]
 name = "Vikunja"
 auth = "waskevin"
 descript = "Vikunja is a self-hosted to-do and project management app for your TNAS. Organise tasks in lists and projects, group them with labels, set due dates and reminders, share lists with other users and subscribe to them from a calendar app, all backed by one SQLite database."
-release_note = "1. Initial release."
-important = "Open the web UI and register the first account - the first registered user becomes the administrator. A random JWT signing secret is generated on first start into data/config.yml by the short-lived vikunja-init container, so logins survive restarts. Docker Engine must be installed and enabled from the TOS App Center."
+release_note = "1.0.1: initial release."
+important = "Open the web UI and register the first account - the first registered user becomes the administrator. Vikunja generates a random signing secret on startup itself, so after a restart you may have to log in again (no data is affected). Docker Engine must be installed and enabled from the TOS App Center. License: AGPL-3.0. Source code, notices and privacy policy: https://github.com/waskevin/vikunja"
 
 [tr-tr]
 name = "Vikunja"
 auth = "waskevin"
 descript = "Vikunja is a self-hosted to-do and project management app for your TNAS. Organise tasks in lists and projects, group them with labels, set due dates and reminders, share lists with other users and subscribe to them from a calendar app, all backed by one SQLite database."
-release_note = "1. Initial release."
-important = "Open the web UI and register the first account - the first registered user becomes the administrator. A random JWT signing secret is generated on first start into data/config.yml by the short-lived vikunja-init container, so logins survive restarts. Docker Engine must be installed and enabled from the TOS App Center."
+release_note = "1.0.1: initial release."
+important = "Open the web UI and register the first account - the first registered user becomes the administrator. Vikunja generates a random signing secret on startup itself, so after a restart you may have to log in again (no data is affected). Docker Engine must be installed and enabled from the TOS App Center. License: AGPL-3.0. Source code, notices and privacy policy: https://github.com/waskevin/vikunja"
 
 [pt-pt]
 name = "Vikunja"
 auth = "waskevin"
 descript = "Vikunja is a self-hosted to-do and project management app for your TNAS. Organise tasks in lists and projects, group them with labels, set due dates and reminders, share lists with other users and subscribe to them from a calendar app, all backed by one SQLite database."
-release_note = "1. Initial release."
-important = "Open the web UI and register the first account - the first registered user becomes the administrator. A random JWT signing secret is generated on first start into data/config.yml by the short-lived vikunja-init container, so logins survive restarts. Docker Engine must be installed and enabled from the TOS App Center."
+release_note = "1.0.1: initial release."
+important = "Open the web UI and register the first account - the first registered user becomes the administrator. Vikunja generates a random signing secret on startup itself, so after a restart you may have to log in again (no data is affected). Docker Engine must be installed and enabled from the TOS App Center. License: AGPL-3.0. Source code, notices and privacy policy: https://github.com/waskevin/vikunja"
