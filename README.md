@@ -47,7 +47,7 @@ version: "3.8"
 
 services:
   vikunja:
-    image: vikunja/vikunja:2.6
+    image: vikunja/vikunja:2.8.0
     restart: unless-stopped
     user: "1000:1000"
     ports:
