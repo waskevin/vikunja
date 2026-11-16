@@ -14,7 +14,7 @@ connect the application to.
 
 ## What the package itself does
 
-- It runs one Docker container from the public image `vikunja/vikunja:2.6`.
+- It runs one Docker container from the public image `vikunja/vikunja:2.8.0`.
 - It does not contain analytics, telemetry, advertising or tracking code.
 - It does not send any data to waskevin or to any third party.
 - It does not open network connections on its own; the only traffic is what
