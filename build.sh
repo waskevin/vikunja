@@ -4,7 +4,7 @@
 set -e
 
 APPID=vikunja
-VERSION=1.0.0
+VERSION=1.0.2
 
 LC_ALL=C tar --owner=0 --group=0 -czf "${APPID}.tar.gz" config.ini "${APPID}.lang" "${APPID}.svg" docker-compose.yml
 sha256sum "${APPID}.tar.gz" > "${APPID}.tar.gz.sha256"
